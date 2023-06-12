@@ -197,9 +197,9 @@ class CustomCheckBoxGroupState<T> extends State<CustomCheckBoxGroup<T>> {
               onPressed: disabled ? null : () => selectButton(e),
               child: Text(
                 widget.buttonLables[index],
-                textAlign: TextAlign.center,
+                textAlign: TextAlign.left,
                 overflow: TextOverflow.ellipsis,
-                maxLines: 1,
+                maxLines: 2,
                 style: widget.buttonTextStyle.textStyle.copyWith(
                   color: disabled
                       ? widget.buttonTextStyle.disabledColor
