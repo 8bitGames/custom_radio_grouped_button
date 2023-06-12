@@ -196,9 +196,9 @@ class CustomRadioButtonState<T> extends State<CustomRadioButton<T>> {
               onPressed: disabled ? null : () => selectButton(e),
               child: Text(
                 widget.buttonLables[index],
-                textAlign: TextAlign.justify,
+                textAlign: TextAlign.left,
                 overflow: TextOverflow.ellipsis,
-                maxLines: 1,
+                maxLines: 2,
                 style: widget.buttonTextStyle.textStyle.copyWith(
                   color: disabled
                       ? widget.buttonTextStyle.disabledColor
